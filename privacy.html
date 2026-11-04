@@ -47,13 +47,13 @@
   <!-- ===================== ESPAÑOL ===================== -->
   <section id="es" lang="es">
     <h1>Política de privacidad de Chef</h1>
-    <p class="meta">Última actualización: 26 de octubre de 2026</p>
+    <p class="meta">Última actualización: 4 de noviembre de 2026</p>
 
     <div class="summary">
       <h2>En corto</h2>
       <ul>
         <li>Chef no tiene cuentas. Tus respuestas, tu menú, tu lista y tu despensa se guardan solo en tu móvil.</li>
-        <li>Para las suscripciones usamos a Apple o Google (según dónde descargues Chef, cobran el pago) y a RevenueCat (comprueba si tu suscripción está activa). RevenueCat recibe un identificador anónimo, los datos de tus compras en el App Store y, solo si lo escribes, tu código de creador.</li>
+        <li>Para las suscripciones usamos a Apple o Google (según dónde descargues Chef, cobran el pago) y a RevenueCat (comprueba si tu suscripción está activa). RevenueCat recibe un identificador anónimo, los datos de tus compras en el App Store y, solo si lo escribes, tu código de creador. RevenueCat avisa también a nuestro servidor de cada compra, para poder pagar a los creadores (punto 3.6).</li>
         <li>Solo si nos das permiso (te lo preguntamos al empezar y puedes cambiarlo en Ajustes), Chef envía datos de uso anónimos a PostHog para ver qué funciona y qué no. Si dices que no, no se envía nada.</li>
         <li>No hay publicidad, ni seguimiento entre apps, ni inteligencia artificial mientras usas la app. No vendemos datos.</li>
         <li>Puedes borrar tus datos del móvil en Ajustes &gt; Borrar mis datos, y escribirnos a <a href="mailto:lukas160@icloud.com">lukas160@icloud.com</a>.</li>
@@ -73,7 +73,7 @@
       <tr><td>Dónde vives (comunidad autónoma), súper, personas, días, presupuesto, qué quieres planificar, microondas, antojos, dieta, alergias, ingredientes que no te gustan, electrodomésticos y carnes y pescados que comes</td><td>Planificar tu semana y calcular el total de la compra.</td></tr>
       <tr><td>Tu semana, la lista de la compra, lo que marcas como comprado, lo que añades a la lista, tu despensa, valoraciones, favoritas, historial de platos, platos cocinados y los importes de tickets que apuntes</td><td>Que la app funcione y que puedas comparar nuestro total con lo que pagaste.</td></tr>
       <tr><td>Ajustes: idioma y recordatorios</td><td>Mostrar la app en tu idioma y programar los avisos en tu móvil.</td></tr>
-      <tr><td>Código de creador, si lo escribes</td><td>Saber qué creador te recomendó Chef. También se envía a RevenueCat (punto 3.2).</td></tr>
+      <tr><td>Código de creador, si lo escribes</td><td>Saber qué creador te recomendó Chef. También se envía a RevenueCat (punto 3.2) y al servidor de Chef (punto 3.6).</td></tr>
     </table>
     </div>
     <p>Algunos de estos datos, como tus alergias o tu dieta, pueden ser sensibles. Por eso nunca salen de tu móvil. Como con cualquier app, el sistema del móvil puede incluirlos en las copias de seguridad de tu móvil (iCloud, Google o tu ordenador), que gestionan Apple o Google.</p>
@@ -106,20 +106,29 @@
     <h3>3.5 Si nos escribes</h3>
     <p>Si nos escribes por correo, usamos tu dirección y tu mensaje solo para responderte.</p>
 
+    <h3>3.6 El servidor de Chef (Supabase, Londres)</h3>
+    <p>Para pagar a los creadores que recomiendan Chef, nuestro servidor (alojado por Supabase, como encargado del tratamiento, en Londres) guarda:</p>
+    <ul>
+      <li>de cada compra de una suscripción, lo que RevenueCat nos avisa: el identificador anónimo, producto, fecha, precio, moneda, si es de prueba (sandbox) e identificadores de transacción, y si después hubo un reembolso. Sirve para saber si una suscripción es la primera;</li>
+      <li>solo si escribes un código de creador: el código, con la fecha, y que terminaste el cuestionario inicial, con la fecha (no tus respuestas).</li>
+    </ul>
+    <p>Para qué: saber si tu primera suscripción viene de un creador y calcular su comisión. Base legal: nuestro interés legítimo en pagar a los creadores. Si quitas el código en la app, tus compras siguientes ya no se atribuyen a nadie.</p>
+
     <h3>Lo que no hacemos</h3>
-    <p>Chef no tiene publicidad, no usa herramientas de informes de errores, no usa analítica sin tu permiso (punto 3.4), no te sigue entre apps ni webs (no usa el identificador de publicidad) y no usa inteligencia artificial mientras la usas. No tenemos servidor propio y no vendemos datos.</p>
+    <p>Chef no tiene publicidad, no usa herramientas de informes de errores, no usa analítica sin tu permiso (punto 3.4), no te sigue entre apps ni webs (no usa el identificador de publicidad) y no usa inteligencia artificial mientras la usas. Nuestro servidor solo guarda lo del punto 3.6. No vendemos datos.</p>
 
     <h2>4. Precios de los supermercados</h2>
     <p>Los precios vienen incluidos en la app y salen de los datos abiertos de <a href="https://github.com/ruvelro/opencesta">OpenCesta</a> (licencia ODbL). Chef no envía nada a OpenCesta ni a ningún supermercado.</p>
 
     <h2>5. Transferencias internacionales</h2>
-    <p>RevenueCat, Expo y PostHog están en Estados Unidos. Las transferencias se hacen con las garantías del Reglamento General de Protección de Datos, como las cláusulas contractuales tipo de la Comisión Europea o el Marco de Privacidad de Datos UE-EE. UU. cuando el proveedor está adherido.</p>
+    <p>RevenueCat, Expo y PostHog están en Estados Unidos. Las transferencias se hacen con las garantías del Reglamento General de Protección de Datos, como las cláusulas contractuales tipo de la Comisión Europea o el Marco de Privacidad de Datos UE-EE. UU. cuando el proveedor está adherido. El servidor de Chef está en Londres (Reino Unido), que cuenta con una decisión de adecuación de la Comisión Europea.</p>
 
     <h2>6. Cuánto tiempo los guardamos</h2>
     <ul>
       <li>Datos en tu móvil: hasta que los borres en Ajustes &gt; Borrar mis datos o borres la app. Borrar tus datos no cancela tu suscripción: eso se gestiona en tu cuenta de Apple o de Google Play.</li>
       <li>RevenueCat: el tiempo necesario para gestionar tu suscripción y cumplir obligaciones legales y contables. Si quieres que borremos ese registro, escríbenos con el número de pedido (Order ID) del recibo de compra de Apple.</li>
       <li>PostHog: los datos de uso se borran automáticamente como mucho a los 12 meses.</li>
+      <li>Servidor de Chef (códigos de creador): el tiempo necesario para pagar a los creadores y cumplir obligaciones contables. Si quieres que lo borremos, escríbenos.</li>
       <li>Correos: el tiempo necesario para atender tu consulta.</li>
     </ul>
 
@@ -130,7 +139,7 @@
     <p>Chef está pensada para personas adultas que organizan la comida de su casa. No está dirigida a menores y no recopilamos a sabiendas datos de menores. Si eres menor, usa Chef con tu madre, padre o tutor.</p>
 
     <h2>9. Seguridad</h2>
-    <p>Tus datos se guardan en el espacio privado de la app, protegido por el sistema del móvil (iOS o Android). Lo que se envía a RevenueCat, a Expo y a PostHog viaja cifrado (HTTPS).</p>
+    <p>Tus datos se guardan en el espacio privado de la app, protegido por el sistema del móvil (iOS o Android). Lo que se envía a RevenueCat, a Expo, a PostHog y al servidor de Chef viaja cifrado (HTTPS).</p>
 
     <h2>10. Cambios</h2>
     <p>Si cambiamos esta política, actualizaremos la fecha de arriba y, si el cambio es importante, te lo diremos en la app.</p>
@@ -145,13 +154,13 @@
   <!-- ===================== ENGLISH ===================== -->
   <section id="en" lang="en">
     <h1>Chef privacy policy</h1>
-    <p class="meta">Last updated: 26 October 2026</p>
+    <p class="meta">Last updated: 4 November 2026</p>
 
     <div class="summary">
       <h2>In short</h2>
       <ul>
         <li>Chef has no accounts. Your answers, menu, shopping list and pantry are stored only on your phone.</li>
-        <li>For subscriptions we use Apple or Google (depending on where you got Chef, they take the payment) and RevenueCat (checks whether your subscription is active). RevenueCat receives an anonymous ID, your App Store or Google Play purchase data and, only if you enter one, your creator code.</li>
+        <li>For subscriptions we use Apple or Google (depending on where you got Chef, they take the payment) and RevenueCat (checks whether your subscription is active). RevenueCat receives an anonymous ID, your App Store or Google Play purchase data and, only if you enter one, your creator code. RevenueCat also tells our server about each purchase, so we can pay creators (section 3.6).</li>
         <li>Only if you allow it (we ask when you start and you can change it in Settings), Chef sends anonymous usage data to PostHog so we can see what works and what doesn't. If you say no, nothing is sent.</li>
         <li>No ads, no tracking across apps and no artificial intelligence while you use the app. We don't sell data.</li>
         <li>You can erase your data from your phone in Settings &gt; Delete my data, and write to us at <a href="mailto:lukas160@icloud.com">lukas160@icloud.com</a>.</li>
@@ -171,7 +180,7 @@
       <tr><td>Where you live (region of Spain), supermarket, household size, days, budget, what to plan, microwave, favourite kinds of dishes, diet, allergies, ingredients you dislike, kitchen appliances and the meat and fish you eat</td><td>To plan your week and work out the shopping total.</td></tr>
       <tr><td>Your week, shopping list, items ticked as bought, items you add, pantry, ratings, favourites, dish history, dishes cooked and receipt totals you note down</td><td>To make the app work and let you compare our total with what you paid.</td></tr>
       <tr><td>Settings: language and reminders</td><td>To show the app in your language and schedule reminders on your phone.</td></tr>
-      <tr><td>Creator code, if you enter one</td><td>To know which creator recommended Chef. It is also sent to RevenueCat (section 3.2).</td></tr>
+      <tr><td>Creator code, if you enter one</td><td>To know which creator recommended Chef. It is also sent to RevenueCat (section 3.2) and to Chef's server (section 3.6).</td></tr>
     </table>
     </div>
     <p>Some of this, such as your allergies or diet, can be sensitive. That is why it never leaves your phone. As with any app, your phone's system may include it in your phone backups (iCloud, Google or your computer), which Apple or Google manage.</p>
@@ -204,20 +213,29 @@
     <h3>3.5 If you write to us</h3>
     <p>If you email us, we use your address and message only to reply.</p>
 
+    <h3>3.6 Chef's server (Supabase, London)</h3>
+    <p>To pay the creators who recommend Chef, our server (hosted by Supabase, as our processor, in London) keeps:</p>
+    <ul>
+      <li>for every subscription purchase, what RevenueCat tells us: the anonymous ID, product, date, price, currency, whether it was a test (sandbox) purchase and transaction IDs, and whether it was later refunded. This is how we know whether a subscription is the first one;</li>
+      <li>only if you enter a creator code: the code, with the date, and that you finished the opening questionnaire, with the date (not your answers).</li>
+    </ul>
+    <p>Why: to know whether your first subscription came from a creator and work out their commission. Legal basis: our legitimate interest in paying creators. If you remove the code in the app, your later purchases are no longer credited to anyone.</p>
+
     <h3>What we don't do</h3>
-    <p>Chef has no ads, uses no crash-reporting tools, uses no analytics without your permission (section 3.4), doesn't track you across apps or websites (it doesn't use the advertising identifier) and uses no artificial intelligence while you use it. We have no server of our own and we don't sell data.</p>
+    <p>Chef has no ads, uses no crash-reporting tools, uses no analytics without your permission (section 3.4), doesn't track you across apps or websites (it doesn't use the advertising identifier) and uses no artificial intelligence while you use it. Our server keeps only what section 3.6 lists. We don't sell data.</p>
 
     <h2>4. Supermarket prices</h2>
     <p>Prices ship inside the app and come from <a href="https://github.com/ruvelro/opencesta">OpenCesta</a> open data (ODbL licence). Chef sends nothing to OpenCesta or to any supermarket.</p>
 
     <h2>5. International transfers</h2>
-    <p>RevenueCat, Expo and PostHog are in the United States. Transfers rely on the safeguards of the EU General Data Protection Regulation, such as the European Commission's standard contractual clauses or the EU-US Data Privacy Framework where the provider takes part.</p>
+    <p>RevenueCat, Expo and PostHog are in the United States. Transfers rely on the safeguards of the EU General Data Protection Regulation, such as the European Commission's standard contractual clauses or the EU-US Data Privacy Framework where the provider takes part. Chef's server is in London (United Kingdom), which has a European Commission adequacy decision.</p>
 
     <h2>6. How long we keep data</h2>
     <ul>
       <li>Data on your phone: until you erase it in Settings &gt; Delete my data or delete the app. Erasing your data doesn't cancel your subscription; you manage that in your Apple or Google Play account.</li>
       <li>RevenueCat: as long as needed to manage your subscription and meet legal and accounting duties. If you want us to delete that record, email us the order number (Order ID) from your Apple purchase receipt.</li>
       <li>PostHog: usage data is deleted automatically after 12 months at most.</li>
+      <li>Chef's server (creator codes): as long as needed to pay creators and meet accounting duties. Email us if you want it deleted.</li>
       <li>Emails: as long as needed to handle your request.</li>
     </ul>
 
@@ -228,7 +246,7 @@
     <p>Chef is made for adults who organise their household's meals. It is not directed at children and we don't knowingly collect children's data. If you are a minor, use Chef with a parent or guardian.</p>
 
     <h2>9. Security</h2>
-    <p>Your data is stored in the app's private space, protected by your phone's system (iOS or Android). What is sent to RevenueCat, Expo and PostHog is encrypted in transit (HTTPS).</p>
+    <p>Your data is stored in the app's private space, protected by your phone's system (iOS or Android). What is sent to RevenueCat, Expo, PostHog and Chef's server is encrypted in transit (HTTPS).</p>
 
     <h2>10. Changes</h2>
     <p>If we change this policy, we will update the date above and, for important changes, tell you in the app.</p>
